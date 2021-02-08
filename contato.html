@@ -1,73 +1,104 @@
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.:Brasil Saúde:.</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="container">
-        <header>
-            
-            <div id="titulo"><h1>Brasil Saúde</h1></div>
-            <nav>
-                <div class="home"> <a href="index.html">Home</a> </div>
-                <div class="sobre"> <a href="sobre.html">Sobre</a> </div>
-                <div class="contato"> <a href="contato.html">Contato</a> </div>
-                <div class="saiba"> <a href="saiba.html">Saiba Mais</a> </div>
-                <div id=search1>
-                                    
-                    <input type="text" id="search" placeholder="Buscar Notícias">
-                    
-                    <img class="searchicon"src="./images/icons/searchicon.png" alt="searchicon">
-                   
-                
+      <header>
+        <div class="cabecalho">
+          <div id="titulo">
+            <h1>Brasil Saúde</h1>
+          </div>
+
+          <nav>
+            <div id="menu">
+              <div><a href="index.html">Home</a></div>
+              <div><a href="contato.html">Contato</a></div>
+              <div><a href="saiba.html">Saiba Mais</a></div>
+              <div><a href="sobre.html">Sobre</a></div>
+
+              <div id="search1">
+                <input type="text" id="search" placeholder="Buscar Notícias" />
+
+                <img
+                  class="searchicon"
+                  src="./images/icons/searchicon.png"
+                  alt="searchicon"
+                />
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="conteudo2">
+          <div class="contato">
+            <h2 class="paragrafo">Entre em Contato</h2>
+
+            <form id="formulario">
+              <div class="form">
+                Nome:<input class="form1" type="text" name="email" />
+              </div>
+              <div class="form">
+                E-mail:<input class="form1" type="text" name="email" />
+              </div>
+              <div class="form">
+                Assunto:<input class="form1" type="text" name="assunto" />
+              </div>
+              <div class="tarea">
+                <div class="form">Descrição:</div>
+                <div>
+                  <textarea></textarea>
                 </div>
-            </nav>
-        </header>
-        
+              </div>
+              <div class="form">
+                <input id="enviar" type="submit" value="Enviar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
 
-        <div id="formulario">
-                             
-                    <h2 class="paragrafo"> Entre em Contato</h2>
-                    <form>
+      <footer>
+        <div id="rodape">
+          <h3 id="tituloredes">Redes Sociais</h3>
 
-                        
-                        <div class="form">Seu e-mail:<input type="text" name="email"> </div><br>
-                         
-                        <div class="form">Assunto:<input type="text" name="assunto"></div><br>
-
-                        
-                        <div class="form"> Descrição:<textarea></textarea></div><br>
-
-
-                        <input type="submit" value="Enviar">
-
-                     
-                    
-                    
-                    
-                    </form>
-                </div>
-        
-        <footer>
-        
-          <div id="rodape">
-            <h3 id=tituloredes>Redes Sociais</h3>
-            
-            <div class="redes">
-            
-            <div class="redesocial"><a href=""><img class="facebook" src="./images/icons/facebook.png" alt="facebook"> BrasilSaude</a></div>
-            <div class="redesocial"><a href=""><img class="twitter" src="./images/icons/twitter.png" alt="twitter">@BrasilSaude</a></div>
-            <div class="redesocial"><a href=""><img class="instagram" src="./images/icons/instagram.png" alt="instagram">@BrasilSaude</a></div>
+          <div class="redes">
+            <div class="redesocial">
+              <a href=""
+                ><img
+                  class="facebook"
+                  src="./images/icons/facebook.png"
+                  alt="facebook"
+                />
+                BrasilSaude</a
+              >
+            </div>
+            <div class="redesocial">
+              <a href=""
+                ><img
+                  class="twitter"
+                  src="./images/icons/twitter.png"
+                  alt="twitter"
+                />@BrasilSaude</a
+              >
+            </div>
+            <div class="redesocial">
+              <a href=""
+                ><img
+                  class="instagram"
+                  src="./images/icons/instagram.png"
+                  alt="instagram"
+                />@BrasilSaude</a
+              >
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
     </div>
-
-
-
-</body>
+  </body>
 </html>

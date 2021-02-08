@@ -1,11 +1,14 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body { 
     background-color: white;
     font-family: Helvetica, sans-serif;
-
+    position: absolute;
+    width: 100%;
+   
   
    
 
@@ -18,7 +21,7 @@ body {
   
 }
 
-nav {
+#menu {
     
 
     display: flex;
@@ -52,7 +55,7 @@ nav {
   background-color:transparent;
   padding-left:5px;
   font-style:italic;
-  font-size:10px;
+  font-size:15px;
   border:none;
   height:30px;
   width:250px;
@@ -60,11 +63,19 @@ nav {
 
 header{
     border-bottom:rgba(223, 224, 226, 0.329)  2px solid;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-  #container {
-      height: 90%;
+/*main*/
+
+main {
+    margin-bottom:15%;
+}
+    #container {
+      height: 700px;
+      display: inline-block;
+      width:100%;
+
   }
   #conteudos {
       display:flex;
@@ -128,15 +139,18 @@ header{
     margin-bottom: 10px;
 }
 
+
 #lista {
         margin-left: 5%;
         margin-right: 5%;
         
+        
     }
    
-    .noticiasecundaria {
+.noticiasecundaria {
         padding: 10px;
-    }
+}
+
  .image {
      width: 100%;
      height: 50%;
@@ -168,18 +182,6 @@ header{
      height: 10px;
  }
 
- footer {
-    background-color: rgba(223, 224, 226, 0.329);
-    background-image: linear-gradient(white, rgba(97, 98, 99, 0.329));
-    height: 250px;
-    
-
-    
- }
-
- #rodape {
-     margin-top: 200px;
- }
 
  .redes{
      
@@ -223,11 +225,7 @@ header{
      margin: 1%;
  }
 
- .conteudo2 {
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
- }
+ 
 
 /*SOBRE*/
 
@@ -235,19 +233,118 @@ header{
     text-align: center;
     margin-bottom:10px ;
 
+
 }
+.conteudo2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: justify;
+    align-items: center;
+    margin-top: 30px;
+    
+       
+    
+ }
+
+
+ .conteudoredes{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 30px;
+     align-items: center;
+     width: 100%;
+ }
+
+ #sobre{
+    width: 40%;
+    text-align: center;
+ }
+
 
 /*SAIBA MAIS*/
 #saibamais{
     text-align: center;
+    margin-bottom: 20px;
+    
 }
 
 .paragrafo {
     margin-bottom:10px ;
-}
-
-#formulario{
     text-align: center;
 }
+.boxsaiba {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*CONTATO*/
+
+.contato {
+    width: 100%;
+}
+#formulario{
+    text-align: justify;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content:flex-end;
+    
+        
+    
+}
+.tarea{
+    display: flex;
+    align-items: center;
+}
+.form {
+    margin-bottom:20px ;
+    margin-top: 20px;
+    margin-left:30px;
+    align-items: baseline;
+    
+}
+
+.form1{
+    height: 30px;
+    border:1px solid rgb(202, 201, 201);
+    border-radius: 5px;
+    width: 400px;
+}
+textarea{
+    margin-top: 20px;
+    border:1px solid rgb(202, 201, 201);
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    
+}
+#enviar{
+    height: 50px;
+    width: 70px;
+    font-size: 1rem;
+    border: gray 1 px solid;
+    border-radius: 10px;
+
+}
 
 
+
+/*Footer*/
+
+footer {
+    
+    position: static;
+    top: 80%;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(223, 224, 226, 0.329);
+    background-image: linear-gradient(white, rgba(97, 98, 99, 0.329));
+    height: 35%;
+    overflow: hidden;
+ }
